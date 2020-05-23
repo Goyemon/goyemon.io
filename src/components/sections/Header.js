@@ -1,10 +1,10 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import SignUpForm from '@common/Form/SignUpForm';
 import ExternalLink from '@common/ExternalLink';
 
 import { ReactComponent as DaiIcon } from '@static/icons/dai.svg';
@@ -51,7 +51,7 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-          <Img fluid={data.art_build.childImageSharp.fluid} />
+            <Img fluid={data.art_build.childImageSharp.fluid} />
             <Text>
               <h1>access to new generation financial services</h1>
               <ProtocolIcons>
@@ -60,9 +60,9 @@ const Header = () => (
                 ))}
               </ProtocolIcons>
               <h2>designed for crypto investors living in the future</h2>
-              <p>
-                <SignUpForm />
-              </p>
+              <AnchorLink href="#sign-up">
+                <SignUpButton>Sign Up for Beta</SignUpButton>
+              </AnchorLink>
             </Text>
           </Grid>
         </Container>
@@ -88,8 +88,8 @@ const ProtocolIcons = styled.div`
   svg {
     color: ${(props) => props.theme.color.black.regular};
     margin: 0 8px;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
   }
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
@@ -129,6 +129,20 @@ const Grid = styled.div`
 
 const Text = styled.div`
   justify-self: center;
+
+  @media (max-width: ${(props) => props.theme.screen.md}) {
+    justify-self: start;
+  }
+`;
+
+const SignUpButton = styled.button`
+  background-color: #00a3e2;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  ${(props) => props.theme.font_size.small};
+  margin: 24px auto;
+  padding: 12px 16px;
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
     justify-self: start;
