@@ -61,7 +61,7 @@ const Header = () => (
           <Grid>
             <Img fluid={data.art_build.childImageSharp.fluid} />
             <Text>
-              <h1>easy access to new generation financial services</h1>
+              <h1>access to new generation financial services at your fingertips</h1>
               <ProtocolIcons>
                 {PROTOCOLS.map(({ icon, link }) => (
                   <ExternalLink href={link}>{icon()}</ExternalLink>

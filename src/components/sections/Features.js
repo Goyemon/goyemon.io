@@ -48,9 +48,9 @@ const Features = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Easy access to the permissionless financial system</h2>
+              <h2>Access to too-good-to-be-true protocols</h2>
               <p>
-                Imagine a bank but with no hassle to go through them. Send, receive and even borrow money without their permission.
+                New generation crypto services sound too good to be true until you find out they are legit. You can earn up to 10% interest a year with Compound. You can win up to $2100 with PoolTogether.
               </p>
             </div>
             <Art>
@@ -64,7 +64,7 @@ const Features = () => (
             <div>
               <h2>Free from instability</h2>
               <p>
-                Don't worry about the price change. Store and exchange stable coins.
+                Don't worry about the price change. We put a stable coin "Dai" first.
               </p>
             </div>
           </Grid>
