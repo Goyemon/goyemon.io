@@ -7,12 +7,17 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
+import { ReactComponent as EtherIcon } from '@static/icons/ether.svg';
 import { ReactComponent as DaiIcon } from '@static/icons/dai.svg';
 import { ReactComponent as CompoundIcon } from '@static/icons/compound.svg';
 import { ReactComponent as PoolTogetherIcon } from '@static/icons/pooltogether.svg';
 import { ReactComponent as UniswapIcon } from '@static/icons/uniswap.svg';
 
 const PROTOCOLS = [
+  {
+    icon: EtherIcon,
+    link: 'https://ethereum.org/'
+  },
   {
     icon: DaiIcon,
     link: 'https://makerdao.com/'
