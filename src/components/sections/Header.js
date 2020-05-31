@@ -13,6 +13,9 @@ import { ReactComponent as CompoundIcon } from '@static/icons/compound.svg';
 import { ReactComponent as PoolTogetherIcon } from '@static/icons/pooltogether.svg';
 import { ReactComponent as UniswapIcon } from '@static/icons/uniswap.svg';
 
+import { ReactComponent as AppStoreBadge } from '@static/badge/appstore.svg';
+import { ReactComponent as GooglePlayBadge } from '@static/badge/googleplay.svg';
+
 const PROTOCOLS = [
   {
     icon: EtherIcon,
@@ -58,13 +61,17 @@ const Header = () => (
           <Grid>
             <Img fluid={data.art_build.childImageSharp.fluid} />
             <Text>
-              <h1>access to new generation financial services</h1>
+              <h1>easy access to new generation financial services</h1>
               <ProtocolIcons>
                 {PROTOCOLS.map(({ icon, link }) => (
                   <ExternalLink href={link}>{icon()}</ExternalLink>
                 ))}
               </ProtocolIcons>
               <h2>designed for crypto investors living in the future</h2>
+              <StoreBadges>
+                <ExternalLink href="https://apps.apple.com/us/app/goyemon-wallet/id1505210804?ls=1">{AppStoreBadge()}</ExternalLink>
+                <ExternalLink href="https://play.google.com/store/apps/details?id=com.swarm.goyemon">{GooglePlayBadge()}</ExternalLink>
+              </StoreBadges>
               {/* <AnchorLink href="#sign-up">
                 <SignUpButton>Sign Up for Beta</SignUpButton>
               </AnchorLink> */}
@@ -88,13 +95,29 @@ const HeaderWrapper = styled.header`
 const ProtocolIcons = styled.div`
   display: flex;
   margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 
   svg {
     color: ${(props) => props.theme.color.black.regular};
     margin: 0 8px;
     width: 40px;
     height: 40px;
+  }
+
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    margin-top: 20px;
+  }
+`;
+
+const StoreBadges = styled.div`
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 24px;
+
+  svg {
+    color: ${(props) => props.theme.color.black.regular};
+    margin: 0 8px;
+    height: 48px;
   }
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
