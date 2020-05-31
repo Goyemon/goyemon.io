@@ -8,17 +8,17 @@ import { Section, Container } from '@components/global';
 const TEAM = [
   {
     name: 'Taisuke Mino',
-    image: 'martin.jpg',
+    image: 'tai.jpg',
     role: 'Designer & Frontend Developer',
   },
   {
-    name: 'Mizera Marek',
-    image: 'lisa.jpg',
+    name: 'Marek Mizera',
+    image: 'marek.jpeg',
     role: 'Fullstack Developer',
   },
   {
     name: 'Shinsaku Ashizawa',
-    image: 'josh.jpg',
+    image: 'shin.jpg',
     role: 'Fullstack Developer',
   }
 ];
