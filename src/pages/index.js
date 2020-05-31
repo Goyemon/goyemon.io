@@ -8,7 +8,7 @@ import Features from '@sections/Features';
 import Protocols from '@sections/Protocols';
 import Team from '@sections/Team';
 import Faq from '@sections/FAQ';
-import SignUpForm from '@sections/SignUpForm';
+// import SignUpForm from '@sections/SignUpForm';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
@@ -19,7 +19,7 @@ const IndexPage = () => (
     <Protocols />
     <Team />
     <Faq />
-    <SignUpForm />
+    {/* <SignUpForm /> */}
     <Footer />
   </Layout>
 );

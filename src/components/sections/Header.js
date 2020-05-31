@@ -1,5 +1,5 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -60,9 +60,9 @@ const Header = () => (
                 ))}
               </ProtocolIcons>
               <h2>designed for crypto investors living in the future</h2>
-              <AnchorLink href="#sign-up">
+              {/* <AnchorLink href="#sign-up">
                 <SignUpButton>Sign Up for Beta</SignUpButton>
-              </AnchorLink>
+              </AnchorLink> */}
             </Text>
           </Grid>
         </Container>
@@ -135,18 +135,18 @@ const Text = styled.div`
   }
 `;
 
-const SignUpButton = styled.button`
-  background-color: #00a3e2;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  ${(props) => props.theme.font_size.small};
-  margin: 24px auto;
-  padding: 12px 16px;
+// const SignUpButton = styled.button`
+//   background-color: #00a3e2;
+//   border: none;
+//   border-radius: 8px;
+//   color: #fff;
+//   ${(props) => props.theme.font_size.small};
+//   margin: 24px auto;
+//   padding: 12px 16px;
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
-    justify-self: start;
-  }
-`;
+//   @media (max-width: ${(props) => props.theme.screen.md}) {
+//     justify-self: start;
+//   }
+// `;
 
 export default Header;
