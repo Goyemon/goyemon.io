@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -12,58 +10,34 @@ import { ReactComponent as DiscordIcon } from '@static/icons/discord.svg';
 
 const SOCIAL = [
   {
-    icon: GithubIcon,
-    link: 'https://github.com/Goyemon'
+    icon: DiscordIcon,
+    link: 'https://discord.gg/MXGfnJG'
   },
   {
     icon: TwitterIcon,
     link: 'https://twitter.com/GoyemonOfficial'
   },
   {
-    icon: DiscordIcon,
-    link: 'https://discord.gg/MXGfnJG'
+    icon: GithubIcon,
+    link: 'https://github.com/Goyemon'
   }
 ];
 
 const Footer = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_pot: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "customers_pot" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 960) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={(data) => (
-      <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
-        <FooterWrapper>
-          <StyledContainer>
-            <Copyright>
-              <h2>Goyemon</h2>
-            </Copyright>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink href={link}>{icon()}</ExternalLink>
-              ))}
-            </SocialIcons>
-          </StyledContainer>
-        </FooterWrapper>
-      </React.Fragment>
-    )}
-  />
+  <React.Fragment>
+    <FooterWrapper>
+      <StyledContainer>
+        <Copyright>
+          <h2>Goyemon</h2>
+        </Copyright>
+        <SocialIcons>
+          {SOCIAL.map(({ icon, link }) => (
+            <ExternalLink href={link}>{icon()}</ExternalLink>
+          ))}
+        </SocialIcons>
+      </StyledContainer>
+    </FooterWrapper>
+  </React.Fragment>
 );
 
 const SocialIcons = styled.div`
