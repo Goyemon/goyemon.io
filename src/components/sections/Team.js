@@ -39,10 +39,7 @@ const Team = () => (
             }
           }
         }
-        art_team: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
-        ) {
+        art_team: file(relativePath: { eq: "team_work.png" }) {
           childImageSharp {
             fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG

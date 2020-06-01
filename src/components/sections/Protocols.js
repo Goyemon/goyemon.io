@@ -34,10 +34,7 @@ const Protocols = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_story: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
-        ) {
+        art_story: file(relativePath: { eq: "tell_story.png" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG

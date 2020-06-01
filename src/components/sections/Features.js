@@ -9,10 +9,7 @@ const Features = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_fast: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
-        ) {
+        art_fast: file(relativePath: { eq: "fast.png" }) {
           childImageSharp {
             fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -20,10 +17,7 @@ const Features = () => (
           }
         }
 
-        art_learn: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
-        ) {
+        art_learn: file(relativePath: { eq: "learn_yourself.png" }) {
           childImageSharp {
             fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -31,10 +25,7 @@ const Features = () => (
           }
         }
 
-        art_ideas: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
-        ) {
+        art_ideas: file(relativePath: { eq: "ideas.png" }) {
           childImageSharp {
             fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
