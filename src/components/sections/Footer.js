@@ -42,7 +42,6 @@ const Footer = () => (
 
 const SocialIcons = styled.div`
   display: flex;
-  margin-bottom: 24px;
 
   svg {
     color: ${(props) => props.theme.color.black.regular};
