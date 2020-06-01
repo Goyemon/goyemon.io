@@ -56,7 +56,9 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-            <Img fluid={data.art_build.childImageSharp.fluid} />
+            <Art>
+              <Img fluid={data.art_build.childImageSharp.fluid} />
+            </Art>  
             <Text>
               <h1>access to new generation financial services at your fingertips</h1>
               <ProtocolIcons>
@@ -138,16 +140,21 @@ const Art = styled.figure`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 120px;
+
+  > ${Art} {
+    width: 100%;
+  }
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     grid-gap: 80px;
 
     > ${Art} {
-      order: 2;
+      margin: 0 auto;
+      width: 50%;
     }
   }
 `;
