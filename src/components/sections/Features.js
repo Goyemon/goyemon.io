@@ -38,17 +38,6 @@ const Features = () => (
       <Section id="features">
         <Container>
           <Grid>
-            <div>
-              <h2>Access to too-good-to-be-true protocols</h2>
-              <p>
-                New generation crypto services sound too good to be true until you find out they are legit. You can earn up to 10% interest a year with Compound. You can win up to $2100 with PoolTogether.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
-            </Art>
-          </Grid>
-          <Grid inverse>
             <Art>
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
@@ -59,11 +48,22 @@ const Features = () => (
               </p>
             </div>
           </Grid>
+          <Grid inverse>
+            <div>
+              <h2>capital-safe crypto investing</h2>
+              <p>
+                Thanks to the stable coin, now you have access to capital-safe investing. You can earn up to 10% interest a year with Compound. You can win up to $2100 with PoolTogether.
+              </p>
+            </div>
+            <Art>
+              <Img fluid={data.art_fast.childImageSharp.fluid} />
+            </Art>
+          </Grid>
           <Grid>
             <div>
-              <h2>Take control of your money</h2>
+              <h2>Your money is safe in your device</h2>
               <p>
-                Nobody but you have the access to your money.
+                Your money is only in your device. Nobody but you have the access to your money. There is no server to steal money from.
               </p>
             </div>
             <Art>

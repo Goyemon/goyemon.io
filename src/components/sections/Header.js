@@ -60,13 +60,13 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>  
             <Text>
-              <h1>access to new generation financial services at your fingertips</h1>
+              <h1>earn passive income with healthy crypto investing</h1>
               <ProtocolIcons>
                 {PROTOCOLS.map(({ icon, link }) => (
                   <ExternalLink href={link}>{icon()}</ExternalLink>
                 ))}
               </ProtocolIcons>
-              <h2>designed for crypto investors living in the future</h2>
+              <h3>You want to take advantage of the power of crypto but no time to worry about money loss? Our wallet is designed for just that.</h3>
               <StoreBadges>
                 <ExternalLink href="https://apps.apple.com/us/app/goyemon-wallet/id1505210804?ls=1">{AppStoreBadge()}</ExternalLink>
                 <ExternalLink href="https://play.google.com/store/apps/details?id=com.swarm.goyemon">{GooglePlayBadge()}</ExternalLink>
