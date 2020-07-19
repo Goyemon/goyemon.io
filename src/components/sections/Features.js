@@ -34,41 +34,45 @@ const Features = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Section id="features">
         <Container>
-          <Grid>
+          <Grid inverse>
             <Art>
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
               <h2>Free from instability</h2>
               <p>
-                Don't worry about the price change. We put a stable coin "Dai" first.
+                Don't worry about the price change. We put a stable coin "Dai"
+                first.
               </p>
             </div>
           </Grid>
-          <Grid inverse>
+          <Grid>
             <div>
               <h2>capital-safe crypto investing</h2>
               <p>
-                Thanks to the stable coin, now you have access to capital-safe investing. You can earn up to 10% interest a year with Compound. You can win up to $2100 with PoolTogether.
+                Thanks to the stable coin, now you have access to capital-safe
+                investing. You can earn up to 10% interest a year with Compound.
+                You can win up to $2100 with PoolTogether.
               </p>
             </div>
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
           </Grid>
-          <Grid>
-            <div>
-              <h2>Your money is safe in your device</h2>
-              <p>
-                Your money is only in your device. Nobody but you have the access to your money. There is no server to steal money from.
-              </p>
-            </div>
+          <Grid inverse>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
+            <div>
+              <h2>Your money is safe in your device</h2>
+              <p>
+                Your money is only in your device. Nobody but you have the
+                access to your money. There is no server to steal money from.
+              </p>
+            </div>
           </Grid>
         </Container>
       </Section>
@@ -85,7 +89,7 @@ const Grid = styled.div`
   justify-items: center;
   margin: 24px 0;
 
-  ${props =>
+  ${(props) =>
     props.inverse &&
     `
     text-align: left;
@@ -96,7 +100,7 @@ const Grid = styled.div`
     margin-bottom: 16px;
   }
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     text-align: left;
     margin-bottom: 96px;
@@ -105,7 +109,7 @@ const Grid = styled.div`
       margin-bottom: 24px;
     }
 
-    ${props =>
+    ${(props) =>
       props.inverse &&
       `
         ${Art} {
