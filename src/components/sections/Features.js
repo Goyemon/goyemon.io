@@ -53,9 +53,8 @@ const Features = () => (
             <div>
               <h2>capital-safe crypto investing</h2>
               <p>
-                Thanks to the stable coin, now you have access to capital-safe
-                investing. You can earn up to 10% interest a year with Compound.
-                You can win up to $2100 with PoolTogether.
+                Thanks to the stable coin, you have access to capital-safe
+                investing. Earn up to 10% interest a year with our savings account powered by Compound. Win up to $2100 with our prize-linked savings account powered by PoolTogether.
               </p>
             </div>
             <Art>
