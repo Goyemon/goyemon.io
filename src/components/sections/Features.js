@@ -44,8 +44,8 @@ const Features = () => (
             <div>
               <h2>free from instability</h2>
               <p>
-                Don't worry about the price change of cryptocurrencies. We put a stable coin "Dai"
-                first.
+                Don't worry about the price change of cryptocurrencies. We put a
+                stable coin "Dai" first.
               </p>
             </div>
           </Grid>
@@ -53,7 +53,9 @@ const Features = () => (
             <div>
               <h2>capital-safe crypto investing</h2>
               <p>
-                Earn up to 10% interest a year with our savings account powered by Compound. Win up to $2100 with our prize-linked savings account powered by PoolTogether.
+                Earn up to 10% interest a year with our savings account powered
+                by Compound. Win up to $2100 with our prize-linked savings
+                account powered by PoolTogether.
               </p>
             </div>
             <Art>
@@ -67,8 +69,9 @@ const Features = () => (
             <div>
               <h2>your money is safe in your device</h2>
               <p>
-                Your money is only in your device. Nobody but you have the
-                access to your money. There is no server to steal money from.
+                Your money is only in your device. You are the only person who
+                has access to your money. There is no server to steal money
+                from.
               </p>
             </div>
           </Grid>
