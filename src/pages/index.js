@@ -7,6 +7,7 @@ import Header from '@sections/Header';
 import Features from '@sections/Features';
 import Protocols from '@sections/Protocols';
 import Team from '@sections/Team';
+import ContactForm from '@sections/ContactForm';
 import Faq from '@sections/FAQ';
 // import SignUpForm from '@sections/SignUpForm';
 import Footer from '@sections/Footer';
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Features />
     <Protocols />
     {/* <Team /> */}
+    <ContactForm />
     <Faq />
     {/* <SignUpForm /> */}
     <Footer />
