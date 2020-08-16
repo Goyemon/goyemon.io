@@ -66,7 +66,6 @@ const Header = () => (
                   <ExternalLink href={link}>{icon()}</ExternalLink>
                 ))}
               </ProtocolIcons>
-              <h3>You want to take advantage of the power of crypto but don't have time to worry about money loss? Our wallet is designed for just that.</h3>
               <StoreBadges>
                 <ExternalLink href="https://apps.apple.com/us/app/goyemon-wallet/id1505210804?ls=1">{AppStoreBadge()}</ExternalLink>
                 <ExternalLink href="https://play.google.com/store/apps/details?id=com.swarm.goyemon">{GooglePlayBadge()}</ExternalLink>
@@ -145,7 +144,7 @@ const Grid = styled.div`
   grid-gap: 120px;
 
   > ${Art} {
-    width: 100%;
+    width: 75%;
   }
 
   @media (max-width: ${(props) => props.theme.screen.md}) {

@@ -44,8 +44,7 @@ const Features = () => (
             <div>
               <h2>free from instability</h2>
               <p>
-                Don't worry about the price change of cryptocurrencies. We put a
-                stable coin "Dai" first.
+                Don't worry about the price. We put a stable coin DAI first.
               </p>
             </div>
           </Grid>
@@ -53,9 +52,8 @@ const Features = () => (
             <div>
               <h2>capital-safe crypto investing</h2>
               <p>
-                Earn up to 10% interest a year with our savings account powered
-                by Compound. Win up to $2100 with our prize-linked savings
-                account powered by PoolTogether.
+                Earn up to 10% interest a year with our savings account. Win up
+                to $2100 with our prize-linked savings account.
               </p>
             </div>
             <Art>
