@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Goyemon landing page',
-  title: 'Goyemon',
+  description: 'goyemon landing page',
+  title: 'goyemon',
   url: '',
   author: 'tai',
   keywords: ['gatsby', 'site', 'goyemon'],

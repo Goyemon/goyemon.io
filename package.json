@@ -1,7 +1,7 @@
 {
   "name": "goyemon.io",
   "private": true,
-  "description": "Goyemon landing page",
+  "description": "goyemon landing page",
   "version": "0.1.0",
   "author": "Swarm",
   "dependencies": {

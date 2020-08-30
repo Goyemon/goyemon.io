@@ -14,7 +14,7 @@ const PrivacyPolicy = () => (
         Personal Information of customers using the Services (the “Users”) in
         connection with the operation of certain storage and remittance services
         of virtual currency and other related services under the name of
-        “Goyemon” (the “Services”), Swarm, K.K. (the “Company”) recognizes the
+        “goyemon” (the “Services”), Swarm, K.K. (the “Company”) recognizes the
         importance of protecting Personal Information and, in order to comply
         with the Act on the Protection of Personal Information (the “Act”) and
         other laws and regulations, the Company will endeavor to handle the

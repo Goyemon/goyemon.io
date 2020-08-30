@@ -28,7 +28,7 @@ const Footer = () => (
     <FooterWrapper>
       <StyledContainer>
         <Copyright>
-          <h2>Goyemon</h2>
+          <h2>goyemon</h2>
         </Copyright>
         <SocialIcons>
           {SOCIAL.map(({ icon, link }) => (
