@@ -52,7 +52,7 @@ const Features = () => (
             <div>
               <h2>capital-safe crypto investing</h2>
               <p>
-                Earn up to 10% interest a year with our savings account. Win up
+                Save to earn up to 10% interest a year with our savings account. Save to win up
                 to $2100 with our prize-linked savings account.
               </p>
             </div>
