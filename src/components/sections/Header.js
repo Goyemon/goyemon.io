@@ -1,41 +1,41 @@
-import React from 'react';
+import React from "react";
 // import AnchorLink from 'react-anchor-link-smooth-scroll';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import styled from "styled-components";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
+import { Container } from "@components/global";
+import ExternalLink from "@common/ExternalLink";
 
-import { ReactComponent as EtherIcon } from '@static/icons/ether.svg';
-import { ReactComponent as DaiIcon } from '@static/icons/dai.svg';
-import { ReactComponent as CompoundIcon } from '@static/icons/compound.svg';
-import { ReactComponent as PoolTogetherIcon } from '@static/icons/pooltogether.svg';
-import { ReactComponent as UniswapIcon } from '@static/icons/uniswap.svg';
+import { ReactComponent as EtherIcon } from "@static/icons/ether.svg";
+import { ReactComponent as DaiIcon } from "@static/icons/dai.svg";
+import { ReactComponent as CompoundIcon } from "@static/icons/compound.svg";
+import { ReactComponent as PoolTogetherIcon } from "@static/icons/pooltogether.svg";
+import { ReactComponent as UniswapIcon } from "@static/icons/uniswap.svg";
 
-import { ReactComponent as AppStoreBadge } from '@static/badge/appstore.svg';
-import { ReactComponent as GooglePlayBadge } from '@static/badge/googleplay.svg';
+import { ReactComponent as AppStoreBadge } from "@static/badge/appstore.svg";
+import { ReactComponent as GooglePlayBadge } from "@static/badge/googleplay.svg";
 
 const PROTOCOLS = [
   {
     icon: EtherIcon,
-    link: 'https://ethereum.org/'
+    link: "https://ethereum.org/"
   },
   {
     icon: DaiIcon,
-    link: 'https://makerdao.com/'
+    link: "https://makerdao.com/"
   },
   {
     icon: CompoundIcon,
-    link: 'https://compound.finance/'
+    link: "https://compound.finance/"
   },
   {
     icon: PoolTogetherIcon,
-    link: 'https://www.pooltogether.com/'
+    link: "https://www.pooltogether.com/"
   },
   {
     icon: UniswapIcon,
-    link: 'https://uniswap.org/'
+    link: "https://uniswap.org/"
   }
 ];
 
@@ -58,17 +58,21 @@ const Header = () => (
           <Grid>
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
-            </Art>  
+            </Art>
             <Text>
-              <h1>earn passive income with capital-safe crypto investing</h1>
+              <h1>earn passive income without losing any money</h1>
               <ProtocolIcons>
                 {PROTOCOLS.map(({ icon, link }) => (
                   <ExternalLink href={link}>{icon()}</ExternalLink>
                 ))}
               </ProtocolIcons>
               <StoreBadges>
-                <ExternalLink href="https://apps.apple.com/us/app/goyemon-wallet/id1505210804?ls=1">{AppStoreBadge()}</ExternalLink>
-                <ExternalLink href="https://play.google.com/store/apps/details?id=com.swarm.goyemon">{GooglePlayBadge()}</ExternalLink>
+                <ExternalLink href="https://apps.apple.com/us/app/goyemon-wallet/id1505210804?ls=1">
+                  {AppStoreBadge()}
+                </ExternalLink>
+                <ExternalLink href="https://play.google.com/store/apps/details?id=com.swarm.goyemon">
+                  {GooglePlayBadge()}
+                </ExternalLink>
               </StoreBadges>
               {/* <AnchorLink href="#sign-up">
                 <SignUpButton>Sign Up for Beta</SignUpButton>
