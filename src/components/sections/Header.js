@@ -60,7 +60,10 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
-              <h1>earn passive income without losing any money</h1>
+              <h1>
+                earn passive income with cryptocurrencies without losing any
+                money
+              </h1>
               <ProtocolIcons>
                 {PROTOCOLS.map(({ icon, link }) => (
                   <ExternalLink href={link}>{icon()}</ExternalLink>
