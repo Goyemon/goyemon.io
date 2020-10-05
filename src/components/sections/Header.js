@@ -61,8 +61,7 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                earn passive income with cryptocurrencies without losing any
-                money
+                earn passive income in your crypto deposit funds with no loss
               </h1>
               <ProtocolIcons>
                 {PROTOCOLS.map(({ icon, link }) => (
