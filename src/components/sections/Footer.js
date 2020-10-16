@@ -27,9 +27,6 @@ const Footer = () => (
   <React.Fragment>
     <FooterWrapper>
       <StyledContainer>
-        <Copyright>
-          <h2>goyemon</h2>
-        </Copyright>
         <SocialIcons>
           {SOCIAL.map(({ icon, link }) => (
             <ExternalLink href={link}>{icon()}</ExternalLink>
@@ -58,24 +55,6 @@ const SocialIcons = styled.div`
 const FooterWrapper = styled.footer`
   background-color: ${(props) => props.theme.color.primary};
   padding: 32px 0;
-`;
-
-const Copyright = styled.div`
-  font-family: ${(props) => props.theme.font.secondary};
-  font-size: 4;
-  color: ${(props) => props.theme.color.black.regular};
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-`;
-
-const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
 `;
 
 const StyledContainer = styled(Container)`
