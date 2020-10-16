@@ -59,7 +59,7 @@ const FooterWrapper = styled.footer`
 
 const StyledContainer = styled(Container)`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
